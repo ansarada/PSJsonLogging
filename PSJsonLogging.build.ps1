@@ -17,7 +17,7 @@ task InstallDependencies {
 	Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
 
 	Install-Module -Name FormatPowerShellCode -Force -Scope CurrentUser
-	Install-Module -Name NuGet -Scope CurrentUser
+	Install-Module -Name NuGet -Force -Scope CurrentUser
 }
 
 # Synopsis: Clean Artifacts Directory
