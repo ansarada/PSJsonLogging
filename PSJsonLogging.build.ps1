@@ -36,7 +36,7 @@ task Clean {
 task Analyze {
 	$scriptAnalyzerParams = @{
 		Path = $ModulePath
-		Severity = @('Error', 'Warning', 'Information')
+		Severity = @('Error', 'Warning') # , 'Information'
 		Recurse = $true
 		Verbose = $false
 	}
