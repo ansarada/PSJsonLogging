@@ -18,7 +18,6 @@ InModuleScope "PSJsonLogging" {
 				AddtionalLogData = @{}
 			}
 			Set-Content -Path $Log.LogPath -Value ''
-
 		}
 
 		Context "Write default log" {
