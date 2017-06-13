@@ -13,7 +13,12 @@ InModuleScope "PSJsonLogging" {
 	Describe "Private/Write-Log" {
 		BeforeEach{
 			# Need to start the log first as this creates the log file. Write log does not create the file so it'll fail if you try to unit test it by itself
-			$Log = Start-Log -Path "${TestDrive}" -Name "example"
+			$Log = @{
+				LogPath = 'TestDrive:\file.log';
+				AddtionalLogData = @{}
+			}
+			Set-Content -Path $Log.LogPath -Value ''
+
 		}
 
 		Context "Write default log" {
