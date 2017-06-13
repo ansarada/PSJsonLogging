@@ -6,7 +6,7 @@ param(
 	$ModuleName = 'PSJsonLogging',
 	$ModulePath = './PSJsonLogging',
 	$BuildNumber = $env:BUILD_NUMBER,
-	$PercentCompliance  = '60'
+	$PercentCompliance  = '40'
 )
 
 ###############################################################################
